@@ -163,7 +163,7 @@ local AntiFall = function()
     while true do
         wait()
         if TimeStopped == true then
-            AntiFallPart.CFrame = CFrame.new(HR.CFrame.X,-1,HR.CFrame.Z)
+            AntiFallPart.CFrame = CFrame.new(HR.CFrame.X,HR.CFrame.Y -1 ,HR.CFrame.Z)
         else
             AntiFallPart:Destroy()
             break
